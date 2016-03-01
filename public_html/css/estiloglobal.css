@@ -1,0 +1,129 @@
+/*=== LAYOUT ===*/ 
+
+/* Página centrada horizontalmente */ 
+#contenedor { 
+	width: 80%; 
+	margin: 0 auto; 
+} 
+    
+#cabecera { 
+} 
+
+#menu { 
+  float: left; 
+  width: 20%; 
+} 
+
+#contenido { 
+	float: left; 
+     width: 80%; 
+} 
+
+#pie { 
+  clear: both; 
+}
+
+/*========= ESTILOS BÁSICOS =========*/ 
+
+body { 
+  margin: 0; 
+  padding: 0; 
+  font-size: .9em; 
+  
+  font-family: serif;     
+} 
+
+p { 
+  font-size: 1em; 
+  font-style: normal; 
+  text-align: justify; 
+  line-height: 1.4em; 
+  text-indent: 2em; 
+} 
+
+h1 { 
+  font-size: 2em; 
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center; 
+} 
+
+h2 { 
+  font-size: 1.8em; 
+  font-family: cursive;  
+} 
+
+h3 { 
+  font-size: 1.5em; 
+  font-family: monospace;  
+} 
+
+/* espacio interior de los párrafos, encabezados e imágenes */ 
+p, h1, h2, h3, h4, h5, img { 
+  padding: 0 0.7em;	 
+} 
+
+/* posicionar la imagen en el centro respecto al resto de elmentos */
+img {
+  float: middle;
+}
+
+a { 
+  color: navy; 
+} 
+
+a:link { 
+	color: maroon; 
+} 
+
+a:hover { 
+  color: blue; 
+} 
+
+ul, ol { 
+  margin: 1em 0 1em 2em; 
+  padding:0; 
+} 
+/*
+table
+{
+border-collapse:collapse;
+}
+
+table,th, td
+{
+border: 1px solid black;
+}
+
+td, tr
+{
+text-align:center;
+vertical-align:middle;
+}
+*/
+
+/*======== MENU =======*/ 
+
+/* Eliminar las viñetas automáticas y todos los márgenes y espaciados aplicados por defecto. 
+Añadir un borde al menú de navegación */ 
+#menu ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  border: 1px solid #7C7C7C; 
+  border-bottom: none; 
+} 
+
+/* establecer el color de fondo y los bordes de cada elemento del menú */ 
+#menu ul li { 
+  border-bottom: 1px solid #7C7C7C; 
+  border-top: 1px solid #FFF; 
+  background: #F4F4F4; 
+} 
+
+/* Aplicar estilos a los enlaces: mostrarlos como un elemento de bloque para que ocupen todo el espacio de cada lista del menú, añadir un espacio de relleno y modificar los colores y la decoración por defecto: */ 
+#menu ul li a { 
+  padding: .2em 0 .2em .5em; 
+  display: block; 
+  text-decoration: none; 
+  color: #333; 
+}

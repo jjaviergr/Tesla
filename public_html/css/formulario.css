@@ -1,0 +1,33 @@
+/* espaciado interior de los input */
+form input {
+	padding: .2em;
+}
+
+/* Se muestran los elementos <label> como elementos de bloque, para que añadan una separación para cada campo del formulario. Además, se añade un margen superior para no mostrar juntas todas las filas del formulario: */
+label {
+  display: block;
+  margin: .5em 0 0 0;
+  font-weight: bold;
+  color: #911;
+}
+
+/* El botón del formulario también se muestra como un elemento de bloque y se le añade un margen */
+.boton {
+  display: block;
+  margin: 1em 1em 1em 0em;
+  float: left;
+}
+
+/* La leyenda del formulario se ve en letra grande y negrita */
+legend {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #711;
+}
+
+/* resaltar el input o textarea al introducir información, no funciona en el Internet Explorer 6.0 */
+textarea:focus, input:focus {
+  border: 2px solid #063;
+  background: #229922;
+}
