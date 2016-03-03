@@ -1,71 +1,153 @@
-<html> 
-<head> 
-<title> Formulario </title> 
-<!-- Hojas de Estilos --> 
-<link rel="stylesheet" type="text/css" href="css/estiloglobal.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/formulario.css" media="screen" />
-</head> 
-<body> 
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
-<script src="js/jquery.smooth-scroll.min.js"></script>
-<script src="js/lightbox.js"></script>
-<!-- Contenedor --> 
-<div id="contenedor"> 
-<!-- Cabecera --> 
-	<div id="cabecera"> 
-	   <center><h3> Contactar con el Autor </h3>	 </center>
-	</div> <!-- /Cabecera --> 
-	<!-- Menu --> 
-  	<div id="menu"> 
-  	<ul> 
-	<li> <a href="index.html" title="Página Principal"> Inicio </a></li> 		
-		<li> <a href="galeria_fotos.html" title="Galeria de inventos"> Galeria de inventos </a></li> 
-		<li> <a href="biografia.html" title="Biografia"> Biografia </a></li> 
-		<li> <a href="inventos.html" title="Inventos">Consecuencias</a></li> 
-		<li> <a href="formulario.html" title="Contactar con el autor"> Contactar </a></li> 		
-        <li> <a href="referencias.html" title="Referencias"> Referencias </a>	</li> 				
- 	</ul> 	 
-	</div> <!-- /Menu --> 	 
-	<!-- Contenido --> 
-	<div id="contenido"> 
-	
-	<fieldset>
-  	<legend>Opinion</legend>
- 
-  	<label for="nombre">Nombre</label>
- 		<input type="text" id="nombre" size="25" />
- 
-  	<label for="apellidos">Apellidos</label>
-  	<input type="text" id="apellidos" size="50" />
- 
-  	<label for="correo">Correo electrónico</label>
-  	<input type="text" id="correo" size="25" /> 
-  	
-		<label for="opinion">Contenido</label>
-		<textarea id="opinion" name="opinion" cols="40" rows="5"></textarea>		
-		
-		<div> 	
-		<input class="boton" type="submit" value="Enviar" title="Enviar la información por correo al autor" />
-		<input class="boton" type="reset" value="Borrar" title="Borra la información que has rellenado" />
-		</div> 	
-		
- 
-  </fieldset>
-	</form>
-	
-	</div>
-	<!-- Pie --> 
-	<div id="pie"> 
-	   <p style="text-align:center"> 
-	   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_CO"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_CO">Licencia Creative Commons </a>.	   
-	   </p>
-	   <p style="text-align:center">
-	    &copy; José Javier García Romero
-	   </p>
-	</div> <!-- /Pie -->  
-	 
-</div> <!-- /Contenedor --> 
+<!DOCTYPE html>
+<html lang="en">
 
-</body> 
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="galeria_fotos.html">Galeria de inventos</a>
+                    </li>
+                    <li>
+                        <a href="biografia.html">Biografia</a>
+                    </li>
+                    <li>
+                        <a href="inventos.html">Consecuencias</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html">Contactar</a>
+                    </li>
+                    <li>
+                        <a href="referencias.html">Referencias</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">                 
+                    <div class="col-lg-12">
+                        <!--
+                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+                        <div class="container-fluid">
+                            <div class="col-lg-6">
+                                <form role="form" class="form-horizontal" >
+                                    <div class="form-group" >
+                                        <div class="col-lg-12">
+                                            <label for="nombre">Nombre</label>
+                                            <input type="text" id="nombre"  size="50" class="form-control" placeholder="Introduce tu Nombre"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-12">
+                                            <label for="apellidos">Apellidos</label>
+                                            <input type="text" id="apellidos"  size="50" class="form-control" placeholder="Introduce tus Apellidos"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-12">
+                                            <label for="correo">Email</label>
+                                            <input type="email" size="50" id="correo" class="form-control" placeholder="Introduce tu email" /> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-12">
+                                            <label for="opinion">Contenido</label>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <textarea id="opinion" name="opinion" cols="40" rows="5" class="form-control"></textarea>		
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group"> 
+                                        <div class="col-lg-12">
+                                            <input class="btn btn-primary" type="submit" value="Enviar" title="Enviar la informaciÃ³n por correo al autor" />
+                                            <input class="btn btn-warning" type="reset" value="Borrar" title="Borra la informaciÃ³n que has rellenado" />
+                                        </div> 	
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                       
+                        
+                        <!-- /#page-content-wrapper -->
+                        <div class="container-fluid">
+                            <!-- /#page-content-wrapper -->
+                            <!-- Footer -->
+                            <footer>
+
+
+                                <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12  ">
+                                     
+                                    <br>
+                                    <hr>
+                                    <p  style="text-align:center"> 
+                                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_CO"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />Esta obra estÃ¡ bajo una <a rel="license" href="https://licensebuttons.net/l/by-nc-sa/3.0/nl/88x31.png">Licencia Creative Commons </a>.	   
+                                    </p>
+                                    <p  style="text-align:center">
+                                        &copy; JosÃ© Javier GarcÃ­a Romero
+                                    </p>
+                                </div>
+
+
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+
+    </body>
+
 </html>
